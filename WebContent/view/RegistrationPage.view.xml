@@ -1,0 +1,8 @@
+<core:View xmlns:core="sap.ui.core.mvc" xmlns="sap.m">
+   <Page>
+      <content>
+           <Title text="Thank You!"/>
+      </content>
+   </Page>
+
+</core:View>

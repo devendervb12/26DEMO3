@@ -15,14 +15,20 @@
 			
 		sap.ui.localResources("view");
 		// ref to view
-		  var oView=  sap.ui.view({
+		  var oView1=  sap.ui.view({
 								   id : "idV1",
 								   viewName : "view.Employee",
 								   type : "XML"
 							   });
 		
+		var oView2 = sap.ui.view({
+			             id : "idV2",
+			             viewName : "view.RegistrationPage",
+			             type : "XML"
+		             });
+		
 		  var oApp = new sap.m.App({
-			  pages : oView
+			  pages : [oView1, oView2]
 		  });
 		  
 		  oApp.placeAt("content");

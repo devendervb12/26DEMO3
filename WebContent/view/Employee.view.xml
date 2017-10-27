@@ -1,19 +1,20 @@
 <core:View xmlns:core="sap.ui.core.mvc" xmlns="sap.m"
  xmlns:form="sap.ui.layout.form"
+ 
+ controllerName="view.Employee"
+ 
  xmlns:c="sap.ui.core">
   <Page title="Employee Registration Form">
      <content>
-         <form:SimpleForm>
-             
+         <form:SimpleForm>           
              <form:title>
                    <c:Title  text="Please Enter Employee Details" />
-             </form:title> 
-                        
+             </form:title>                        
              <form:content>
                  <Label text="Employee Name"/>
                  <Input />             
-             </form:content>
-             
+                 <Button text="Goto Next Page" press="gotoNextPage"/>
+             </form:content>             
          </form:SimpleForm>
      </content>   
   </Page>
